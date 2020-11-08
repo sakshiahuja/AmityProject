@@ -1,0 +1,21 @@
+.cards{
+    padding: 10px;
+    padding-top: 50px;
+}
+
+.card-body{
+    background-color: rgb(116, 155, 228);
+}
+.card1{
+    opacity: 0.4;
+}
+.carousel-caption{
+    text-align: center;
+    
+}
+.a :hover{
+    color: grey;
+}
+.row{
+    padding-top: 30px;
+}

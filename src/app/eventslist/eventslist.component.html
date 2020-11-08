@@ -1,0 +1,107 @@
+<div class="bk" style="background-color:rgb(240, 240, 240);">
+<div class="container" >
+<div class="row" style="padding-top: 90px;">
+    <div class="col-3">
+      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Upcoming Events</a>
+        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false" (click)="openCards()">Past Events</a>
+
+      </div>
+    </div>
+    <div class="col-9">
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <div class="bk" style="background-color:rgb(240, 240, 240); font-family: 'Oswald', sans-serif; text-align: center">
+                No Upcoming Events 
+                <div class="line">
+                    <svg height="600" width="100%">
+                        <line x1="0" y1="0" x2="2000" y2="00" style="stroke:rgb(104, 102, 102);stroke-width:2" />
+                      </svg>
+                      </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+            <div class="bk" style="background-color:rgb(240, 240, 240); font-family: 'Oswald', sans-serif;">
+            <div class="container">
+            
+
+<div class="EventsSuperDiv" *ngIf="showCards">
+  <!-- <div style="padding-left:90px;padding-top:50px;">
+    <button mat-raised-button color="primary"> Post New Event</button>
+  </div> -->
+
+  <div class="EventsDiv" *ngFor="let item of EventsTableArray" style="font-size: 15px; font-family:arial;">
+    <mat-card class="EventsCard" style="height: 275px;">
+  <div fxLayout="column" fxLayoutGap="5px">
+    <div fxFlex="90%">
+       <div fxLayout="row" fxLayoutGap="5px">
+        <div fxFlex="60%">
+          <div fxLayoutGap="3px" fxLayout="column">
+            <div fxFlex="20%">
+               <div fxLayoutGap="10px" fxLayout="row">
+                   <div fxFlex="20%" style="font-size: 15px; font-family: 'Oswald', sans-serif;">{{item.FromDateOfEvent}}</div>
+                   <div fxFlex="calc(20%-10px)" style="font-size: 15px; font-family: 'Oswald', sans-serif;">{{item.TimeFrom}}</div>
+                 </div>
+            </div>
+            <div fxFlex="calc(20%-3px)"> <h2 style="font-size: 30px; font-family: 'Oswald', sans-serif;"><strong>{{item.Topic}}</strong></h2></div> 
+            <div fxFlex="calc(20%-3px)"> 
+              <div fxLayoutGap="2px" fxLayout="row">
+                <div fxFlex="10%">
+                  <mat-icon>place</mat-icon>
+                </div>
+                <div fxFlex="calc(10%-2px)" style="font-size: 15px; font-family: 'Oswald', sans-serif;">
+                  {{item.Venue}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div fxFlex="calc(40%-5px)">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img [src]="item.imageURL"  style="width:100%;height:100%;">
+                  </div>
+                  <div class="flip-card-back">
+                    {{item.NameOfExpert}}
+                    <p>{{item.FromDateOfEvent}}--{{item.ToDateOfEvent}}</p> 
+                    <p>{{item.Description}}</p>
+                  </div>
+                </div>
+              </div>
+         
+        </div>
+       </div>
+    </div>
+    <div fxFlex="calc(10%-5px)">
+      <mat-divider></mat-divider>
+      &nbsp;
+      &nbsp;
+        <div fxLayout="row" fxLayoutGap="2px">
+        <div fxFlex="60%" style="font-size: 15px; font-family: 'Oswald', sans-serif;">
+           <strong>Attendence:</strong>{{item.Attendence}}
+        </div>
+        <!-- <div fxFlex="calc(40%-2px)">
+           <button mat-raised-button   color="primary"> Manage >></button>
+        </div> -->
+        </div>
+    </div>
+   </div>
+
+    </mat-card>
+  </div>
+</div>
+         
+            </div>
+        </div>
+        
+      </div>
+    </div>
+</div>
+</div>
+</div>
+
+<app-footer></app-footer>
+
+

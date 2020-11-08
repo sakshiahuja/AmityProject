@@ -1,0 +1,14 @@
+{
+    "amityevn": {
+        "awscloudformation": {
+            "AuthRoleName": "amityinc-amityevn-20190621154431-authRole",
+            "UnauthRoleArn": "arn:aws:iam::308205457270:role/amityinc-amityevn-20190621154431-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::308205457270:role/amityinc-amityevn-20190621154431-authRole",
+            "Region": "ap-south-1",
+            "DeploymentBucketName": "amityinc-amityevn-20190621154431-deployment",
+            "UnauthRoleName": "amityinc-amityevn-20190621154431-unauthRole",
+            "StackName": "amityinc-amityevn-20190621154431",
+            "StackId": "arn:aws:cloudformation:ap-south-1:308205457270:stack/amityinc-amityevn-20190621154431/5ccee760-940d-11e9-8cf3-0af78aa5c40c"
+        }
+    }
+}

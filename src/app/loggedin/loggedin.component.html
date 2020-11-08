@@ -1,0 +1,180 @@
+<div class="container" style="height:10%; ">
+<div class="row" style="margin-top: 80px; ">
+<div class="col-8" style="height: 10%;">
+<img src="assets/lo.png" style="height:50%; width:50%;">
+</div>
+<div class="col-4">
+<h2 style="font-size: 35px; font-family: 'Oswald', sans-serif;">Amity Innovation Incubator</h2>
+<p style="font-size: 20px; font-weight: 100; color: rgb(80, 80, 80);" ><i class="fa fa-map-marker" aria-hidden="true"> Delhi, India</i></p>
+<p style="font-size: 20px; font-weight: 100; color: rgb(80, 80, 80);" ><i class="fa fa-users" aria-hidden="true"> 944 members</i></p>
+<!-- <p style="font-size: 20px; font-weight: 100; color: rgb(80, 80, 80);"><i class="fa fa-user" aria-hidden="true"> Organised by </i></p> -->
+
+<div class="row" style="padding-top: 140px;">
+<div style="font-size: 20px; font-family: 'Oswald', sans-serif;">Share:&nbsp;</div>
+  <div class="fb">
+    <span class="fb"><i class="fab fa-facebook-square"></i></span>&nbsp;
+    </div>
+    <div class="g">
+    <span class="g"><i class="fab fa-google" ></i></span>&nbsp;
+    </div>
+    <div class="li">
+    <span class="li"><i class="fab fa-linkedin"></i></span>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="line">
+<svg height="2" width="100%">
+    <line x1="0" y1="0" x2="2000" y2="00" style="stroke:rgb(104, 102, 102);stroke-width:2" />
+  </svg>
+  </div>
+
+
+
+  <div class="header" id="myHeader">
+<div class="container">
+  <div class="row">
+      <div class="col-8" style="padding-bottom: 15px;">
+      <button mat-button class="active">About</button>
+      <!-- <mat-menu #aboveMenu="matMenu" yPosition="above">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu> -->
+      
+      <button mat-button ><a href="/eventslist" style="color: black">Events</a></button>
+      <!-- <mat-menu #belowMenu="matMenu" yPosition="below">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu> -->
+      
+      <button mat-button >Members</button>
+      <!-- <mat-menu #beforeMenu="matMenu" xPosition="before">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu> -->
+           
+      <button mat-button ><a href="/gallery" style="color: black">Photos</a></button>
+      <!-- <mat-menu #afterMenu="matMenu" xPosition="after">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu> -->
+      <button mat-button >Discussions</button>
+      <!-- <mat-menu #afterMenu="matMenu" xPosition="after">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu> -->
+      <button mat-button >More</button>
+      <!-- <mat-menu #afterMenu="matMenu" xPosition="after">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu> --></div>
+      <div class="col-4">
+      <button mat-button class="btn">Join this Group</button> &nbsp;
+        
+</div>
+  </div>
+  </div>
+</div>
+<!-- <div class="stipe">
+  <div class="bounds bounds--wide padding--left padding--right">
+    <div class="flex flex--row flex--alignCenter">
+      <div class="flex-item flex-item--3">
+        <div class="groupAnchorBar stripe">
+          <div class="bounds bounds--wide padding--top-half padding--bottom-half">
+            <div class="flex flex--column atMedium_flex--row atMedium_flex--rowReverse flex--alignCenter">
+              <div class="flex-item flex-item--2 margin--top padding--bottom-half">
+                <div class="hscrollContainer hscrollGradientWrap hscrollGradient--hidden">
+                  <div class="hscroll">
+                    <div class="hscroll-content">
+                      <ul class="inlineblockList">
+                        <li>
+                          <a class="link" href="/about">
+                          <span>About</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="link" href="/events">
+                          <span>Events</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="link" href="/events">
+                          <span>Members</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="link" href="/events">
+                          <span>Photos</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="link" href="/events">
+                          <span>Discussions</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="content">
+<app-about1></app-about1>
+<div class="bk" style="background-color:rgb(240, 240, 240); font-family: 'Oswald', sans-serif;"> 
+<div class="container">
+  <h3 style="font-size: 40px;">Past Events : </h3>
+<mat-card class="evcards" tabindex="-2" style="font-family: 'Oswald', sans-serif; width: 55%;">
+    <img mat-card-image src="assets/university.jpg" style=" float:right; height: 70%; width: 50%;">
+  <mat-card-subtitle routerLink = "/events">Tue, Apr 23, 2:00PM</mat-card-subtitle>
+  <mat-card-title>IPR for Startups</mat-card-title>
+  <mat-card-content><i class="fa fa-map-marker" aria-hidden="true"> Amity Innovation Incubator</i></mat-card-content>
+  <mat-card-actions>
+      <button mat-button routerLink="/ipr">View</button>
+    </mat-card-actions>
+</mat-card>
+
+<mat-card class="evcards" style="margin-top: 10px; font-family: 'Oswald', sans-serif;width: 55%;">
+    <img mat-card-image src="assets/amity1.jpg" style=" float:right; height: 70%; width: 50%;">
+
+  <mat-card-subtitle>Tue, Mar 5, 9:30AM</mat-card-subtitle>
+  <mat-card-title>MEAN Stack - Applab Noida</mat-card-title>
+  <mat-card-content><i class="fa fa-map-marker" aria-hidden="true"> Amity University</i></mat-card-content>
+  <mat-card-actions>
+      <button mat-button routerLink="/mean">View</button>
+    </mat-card-actions>
+</mat-card>
+<mat-card class="evcards" style="margin-top: 10px;font-family: 'Oswald', sans-serif;width: 55%;">
+    <img mat-card-image src="assets/amity1.jpg" style=" float:right; height: 60%; width: 50%;">
+
+  <mat-card-subtitle>Thu, Feb 21, 9:00AM</mat-card-subtitle>
+  <mat-card-title>Applab Launch Event, Raipur</mat-card-title>
+  <mat-card-content ><i class="fa fa-map-marker" aria-hidden="true"> Amity University Chhattisgarh, Raipur</i></mat-card-content>
+  <mat-card-actions>
+      <button mat-button routerLink="/applablaunch">View</button>
+    </mat-card-actions>
+</mat-card>
+<mat-card class="evcards" style="margin-top: 10px;font-family: 'Oswald', sans-serif;width: 55%; margin-bottom: 40px;">
+    <img mat-card-image src="assets/university.jpg" style=" float:right; height: 60%; width: 50%;">
+
+  <mat-card-subtitle>Thu, Feb 21, 9:00AM</mat-card-subtitle>
+  <mat-card-title>Applab Launch Event, Mumbai</mat-card-title>
+  <mat-card-content><i class="fa fa-map-marker" aria-hidden="true"> Amity University, Mumbai</i></mat-card-content>
+  <mat-card-actions>
+      <button mat-button routerLink="/applab">View</button>
+    </mat-card-actions>
+</mat-card>
+
+<app-photos></app-photos>
+<div class="container">
+<h3 style="font-family: 'Oswald', sans-serif; padding-top: 20px; font-size: 40px;" >Discussions : </h3>
+</div>
+</div>
+<app-footer></app-footer>
+</div>

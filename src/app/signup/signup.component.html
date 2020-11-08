@@ -1,0 +1,30 @@
+<div class="body">
+  	<div class="blur"><img src="assets/blur.jpg"></div>
+
+<div class="signup-page">
+    <div class="form">
+      <div class="text">
+      <h3>Sign up for your </h3><br>
+        <b>Enterprenuer Journey</b>
+    </div>
+      <form class="container" [formGroup]="myForm" (ngSubmit)="update()" class="registering-form">
+        <input type="email" placeholder="Email Address" />
+        <input type="password" placeholder="Password" />
+        <input type="password" placeholder="Confirm Password" />
+        <a routerLink=""><button>Sign up</button></a>
+        <p class="message">By signing up,you agree to our <a href="/login">Terms of use</a> and <a href="/">Privacy Policy</a></p>
+        <!--a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-instagram"></a-->
+        <p class="message">Already existing user? <a href="/login">Login</a></p>
+      </form>
+     
+    </div>
+  </div>
+</div>
+
+
+
+
+

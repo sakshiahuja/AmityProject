@@ -1,0 +1,58 @@
+
+.share{
+    padding-top: 260px;
+    font-size: 80%;
+  
+}
+
+/* .header {
+    background: #555;
+    color: #f1f1f1;
+  }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  } */
+  
+.sticky + .content {
+    padding-top: 102px;
+  }
+  
+.google span{
+    color: rgb(247, 29, 29);
+    font-size: 60px;
+  margin-left: 10px;
+  }
+  .social_icon span{
+  font-size: 60px;
+  margin-left: 10px;
+  }
+
+.fb span:hover{
+    color: blueviolet;
+    cursor: pointer;
+}
+.g span:hover{
+    color: blueviolet;
+    cursor: pointer;
+}
+.li span:hover{
+    color: blueviolet;
+    cursor: pointer;
+}
+.line{
+    opacity: 0.3;
+}
+.btn{
+    background-color: rgb(240, 69, 69);
+}
+
+
+mat-card:hover {
+    background-color: rgba(138, 161, 185, 0.2);
+}
+
+mat-card:focus {
+    background-color: blue;
+}

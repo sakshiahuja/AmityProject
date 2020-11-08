@@ -1,0 +1,26 @@
+.card-body{
+    text-align: center;
+    background-color: rgb(226, 219, 219);
+    border-radius: 30px;
+
+}
+
+.card-title{
+    color:green;
+}
+
+.card-subtitle mb-2 text-muted{
+    color: black;
+}
+
+.w-100{
+    padding-top: 20px;
+}
+
+.card{
+    border-radius: 30px;
+}
+
+.container{
+    padding-top: 40px;
+}
